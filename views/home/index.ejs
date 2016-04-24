@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Results</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Waterline</td>
+      <td><%= waterlineResults.length %></td>
+      <td><%= waterlineTime.toFixed(2) %>ms</td>
+    </tr>
+    <tr>
+      <td>Native</td>
+      <td><%= nativeResults.length %></td>
+      <td><%= nativeTime.toFixed(2) %>ms</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Native is <%= (waterlineTime / nativeTime).toFixed(1) %>x faster</h2>
